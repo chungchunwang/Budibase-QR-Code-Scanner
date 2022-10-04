@@ -1,0 +1,61 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "QR-Code-Scanner",
+    "friendlyName": "QR Code Scanner",
+    "description": "A component that scans QR codes.",
+    "icon": "Text",
+    "settings": [
+      {
+        "type": "field/string",
+        "key": "field",
+        "label": "Field"
+      },
+      {
+        "type": "text",
+        "key": "label",
+        "label": "Label",
+        "defaultValue": "QR Code Scanner"
+      },
+      {
+        "type": "number",
+        "key": "fps",
+        "label": "FPS",
+        "min": 1,
+        "max": 60,
+        "defaultValue": 30
+      },
+      {
+        "type": "boolean",
+        "key": "autoStartCamera",
+        "label": "Auto Start Camera",
+        "defaultValue": false
+      },
+      {
+        "type": "boolean",
+        "key": "scannerBox",
+        "label": "Use Scanner Box",
+        "defaultValue": false
+      },
+      {
+        "type": "number",
+        "key": "scannerBoxWidth",
+        "label": "Scanner Box Width",
+        "min": 1,
+        "max": 10000,
+        "dependsOn": "scannerBox",
+        "defaultValue": 250
+      },
+      {
+        "type": "number",
+        "key": "scannerBoxHeight",
+        "label": "Scanner Box Height",
+        "min": 1,
+        "max": 10000,
+        "dependsOn": "scannerBox",
+        "defaultValue": 250
+      }
+    ]
+  }
+}
