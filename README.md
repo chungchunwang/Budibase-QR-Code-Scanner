@@ -9,6 +9,16 @@ A component that scans QR codes.
 
 Find out more about [Budibase](https://github.com/Budibase/budibase).
 
+## Options
+Option | Description |
+|---|---|
+| Label | What the field is called.|
+| FPS | The frame rate of the scanner.|
+| Auto Start Camera | If camera permissions are already granted, this will make the scanner start scanning as soon as the page loads.|
+| Scanner Box | Whether to draw a box in the center of the screen that users will have to align QR codes inside of.|
+| Scanner Box Width | The width of the scanner box.|
+| Scanner Box Height | The height of the scanner box.|
+
 ## Instructions
 
 To build your new  plugin run the following in your Budibase CLI:
