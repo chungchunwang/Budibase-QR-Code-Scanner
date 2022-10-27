@@ -49,6 +49,7 @@
   });
 
   let html5QrcodeScanner;
+  let scannerId = Math.random().toString(16);
 
   let success = false;
   let qrCodeValue = "";
@@ -58,7 +59,7 @@
     success = false;
     qrCodeValue = "";
     html5QrcodeScanner = new Html5QrcodeScanner(
-      "video",
+      scannerId,
       {
         fps: fps,
         qrbox: scannerBox
@@ -91,7 +92,7 @@
     </label>
     <div class="spectrum-Form-itemField">
       <div class="CameraBackground">
-        <div id="video" class="Video" />
+        <div id={scannerId} class="Video" />
         {#if success}
           <div style="text-align: center;">
             <p>Scanned Result: {qrCodeValue}</p>
