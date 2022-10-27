@@ -1,6 +1,6 @@
 {
   "name": "QR-Code-Scanner",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A component that scans QR codes.",
   "license": "MIT",
   "svelte": "index.js",
